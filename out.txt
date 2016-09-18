@@ -1,0 +1,437 @@
+1. Create DateFormat object by entering triplet
+2. Create DateFormat object by entering format string
+3. Create default DateFormat object (dd-mmm-yy)
+4. Select current date format
+5. Create Date object by Entering triplet
+6. Create Date object by Entering parse-able string
+7. Create default Date object (today)
+8. Test arithmetic operators
+9. Test relational operators
+10. Test cast operators
+11. Test for leap year
+12. Test I/O operators
+Other. Exit
+
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):d
+Enter month format (any invalid string for 0):mm
+Enter year format (any invalid string for 0):yyyy
+New object created: d-mm-yyyy
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):d
+Enter month format (any invalid string for 0):m
+Enter year format (any invalid string for 0):yyyy
+New object created: d-m-yyyy
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):abc
+Enter month format (any invalid string for 0):m
+Enter year format (any invalid string for 0):yyyy
+abc: Invalid date format. Assigning 0.
+New object created: (NULL)-m-yyyy
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):d
+Enter month format (any invalid string for 0):abc
+Enter year format (any invalid string for 0):yy
+abc: Invalid month format. Assigning 0.
+New object created: d-(NULL)-yy
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):d
+Enter month format (any invalid string for 0):m
+Enter year format (any invalid string for 0):abc
+abc: Invalid year format. Assigning 0.
+New object created: d-m-(NULL)
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):abc
+Enter month format (any invalid string for 0):def
+Enter year format (any invalid string for 0):yy
+abc: Invalid date format. Assigning 0.
+def: Invalid month format. Assigning 0.
+New object created: (NULL)-(NULL)-yy
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):dd
+Enter month format (any invalid string for 0):abc
+Enter year format (any invalid string for 0):def
+abc: Invalid month format. Assigning 0.
+def: Invalid year format. Assigning 0.
+New object created: dd-(NULL)-(NULL)
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):abc
+Enter month format (any invalid string for 0):m
+Enter year format (any invalid string for 0):def
+abc: Invalid date format. Assigning 0.
+def: Invalid year format. Assigning 0.
+New object created: (NULL)-m-(NULL)
+
+Enter main menu choice no.: (integer)1
+Enter date format (any invalid string for 0):abc
+Enter month format (any invalid string for 0):def
+Enter year format (any invalid string for 0):ghi
+abc: Invalid date format. Assigning 0.
+def: Invalid month format. Assigning 0.
+ghi: Invalid year format. Assigning 0.
+New object created: (NULL)-(NULL)-(NULL)
+
+Enter main menu choice no.: (integer)2
+Enter format string:d-mmm-yyyy
+New object created: d-mmm-yyyy
+
+Enter main menu choice no.: (integer)2
+Enter format string:dd-m-yy
+New object created: dd-m-yy
+
+Enter main menu choice no.: (integer)2
+Enter format string:qwerty123
+qwerty123: Invalid format string for DateFormat. Assigning 0, 0, 0.
+New object created: (NULL)-(NULL)-(NULL)
+
+Enter main menu choice no.: (integer)2
+Enter format string:-m-yy
+New object created: (NULL)-m-yy
+
+Enter main menu choice no.: (integer)2
+Enter format string:dd--yyyy
+New object created: dd-(NULL)-yyyy
+
+Enter main menu choice no.: (integer)2
+Enter format string:dd-mm-
+New object created: dd-mm-(NULL)
+
+Enter main menu choice no.: (integer)2
+Enter format string:--yyyy
+New object created: (NULL)-(NULL)-yyyy
+
+Enter main menu choice no.: (integer)2
+Enter format string:--
+New object created: (NULL)-(NULL)-(NULL)
+
+Enter main menu choice no.: (integer)2
+Enter format string:abc-def-ghi
+abc: Invalid date format. Assigning 0.
+def: Invalid month format. Assigning 0.
+ghi: Invalid year format. Assigning 0.
+New object created: (NULL)-(NULL)-(NULL)
+
+Enter main menu choice no.: (integer)2
+Enter format string:-abc-
+abc: Invalid month format. Assigning 0.
+New object created: (NULL)-(NULL)-(NULL)
+
+Enter main menu choice no.: (integer)3
+New object created: dd-mmm-yy
+
+Enter main menu choice no.: (integer)4
+NOTE: Current date format: d-m-yy
+0. d-mm-yyyy
+1. d-m-yyyy
+2. (NULL)-m-yyyy
+3. d-(NULL)-yy
+4. d-m-(NULL)
+5. (NULL)-(NULL)-yy
+6. dd-(NULL)-(NULL)
+7. (NULL)-m-(NULL)
+8. (NULL)-(NULL)-(NULL)
+9. d-mmm-yyyy
+10. dd-m-yy
+11. (NULL)-(NULL)-(NULL)
+12. (NULL)-m-yy
+13. dd-(NULL)-yyyy
+14. dd-mm-(NULL)
+15. (NULL)-(NULL)-yyyy
+16. (NULL)-(NULL)-(NULL)
+17. (NULL)-(NULL)-(NULL)
+18. (NULL)-(NULL)-(NULL)
+19. dd-mmm-yy
+(integer)1
+Successfully set current date format as d-m-yyyy
+
+Enter main menu choice no.: (integer)5
+Enter day no.: (integer)2
+Enter month no.: (integer)12
+Enter year: (integer)2011
+Date object creation threw no exceptions
+
+
+Enter main menu choice no.: (integer)5
+Enter day no.: (integer)29
+Enter month no.: (integer)6
+Enter year: (integer)1977
+Date object creation threw no exceptions
+
+
+Enter main menu choice no.: (integer)5
+Enter day no.: (integer)29
+Enter month no.: (integer)2
+Enter year: (integer)2009
+Domain error caught: Date of month out of bounds.
+
+
+Enter main menu choice no.: (integer)5
+Enter day no.: (integer)29
+Enter month no.: (integer)2
+Enter year: (integer)2000
+Date object creation threw no exceptions
+
+
+Enter main menu choice no.: (integer)5
+Enter day no.: (integer)31
+Enter month no.: (integer)6
+Enter year: (integer)1964
+Domain error caught: Date of month out of bounds.
+
+
+Enter main menu choice no.: (integer)5
+Enter day no.: (integer)40
+Enter month no.: (integer)6
+Enter year: (integer)2014
+Invalid argument caught: Date/month out of bounds.
+
+
+Enter main menu choice no.: (integer)5
+Enter day no.: (integer)15
+Enter month no.: (integer)20
+Enter year: (integer)1954
+Invalid argument caught: Date/month out of bounds.
+
+
+Enter main menu choice no.: (integer)5
+Enter day no.: (integer)2
+Enter month no.: (integer)3
+Enter year: (integer)11
+Out of range error caught: Year out of range (1950-2049).
+
+
+Enter main menu choice no.: (integer)6
+NOTE: Current date format: d-m-yyyy
+Enter date string:5-11-2019
+Date object creation threw no exceptions
+
+
+Enter main menu choice no.: (integer)6
+NOTE: Current date format: d-m-yyyy
+Enter date string:05-11-2019
+Invalid argument caught: Mismatch between date format and supplied date string.
+
+
+Enter main menu choice no.: (integer)6
+NOTE: Current date format: d-m-yyyy
+Enter date string:32-1-1982
+Invalid argument caught: Date/month out of bounds.
+
+
+Enter main menu choice no.: (integer)6
+NOTE: Current date format: d-m-yyyy
+Enter date string:13-13-2044
+Invalid argument caught: Date/month out of bounds.
+
+
+Enter main menu choice no.: (integer)6
+NOTE: Current date format: d-m-yyyy
+Enter date string:6-9-2056
+Out of range error caught: Year out of range (1950-2049).
+
+
+Enter main menu choice no.: (integer)6
+NOTE: Current date format: d-m-yyyy
+Enter date string:3-12-16
+Invalid argument caught: Mismatch between date format and supplied date string.
+
+
+Enter main menu choice no.: (integer)7
+Date object creation threw no exceptions
+
+
+Enter main menu choice no.: (integer)8
+Taking input of d1:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 20-3-2019
+Prefix ++ result: 21-3-2019
+Prefix -- result: 19-3-2019
+Postfix ++ result: 27-3-2019
+Posfix -- result: 13-3-2019
+Enter no. of days to add: (integer)3501
+Result of binary addition: 19-10-2028
+Taking input of d2:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 16-7-2044
+Result of binary subtraction: 9250
+
+
+Enter main menu choice no.: (integer)8
+Taking input of d1:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 15-8-1999
+Prefix ++ result: 16-8-1999
+Prefix -- result: 14-8-1999
+Postfix ++ result: 22-8-1999
+Posfix -- result: 8-8-1999
+Enter no. of days to add: (integer)-4567
+Result of binary addition: 12-2-1987
+Taking input of d2:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 3-1-2003
+Result of binary subtraction: 1237
+
+
+Enter main menu choice no.: (integer)8
+Taking input of d1:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 30-12-2049
+Prefix ++ result: 31-12-2049
+Prefix -- result: 29-12-2049
+Cannot increment beyond 31-12-2049.
+Posfix -- result: 23-12-2049
+Enter no. of days to add: (integer)-1204
+Result of binary addition: 13-9-2046
+Taking input of d2:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 12-5-2000
+Result of binary subtraction: 18129
+
+
+Enter main menu choice no.: (integer)8
+Taking input of d1:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 3-1-1950
+Prefix ++ result: 4-1-1950
+Prefix -- result: 2-1-1950
+Postfix ++ result: 10-1-1950
+Cannot decrement beyond 1-1-1950.
+Enter no. of days to add: (integer)4332
+Result of binary addition: 13-11-1961
+Taking input of d2:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 5-11-2033
+Result of binary subtraction: 30622
+
+
+Enter main menu choice no.: (integer)9
+Taking input of d1:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 30-4-2023
+Taking input of d2:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 4-7-2019
+d1 == d2: 0
+d1 != d2: 1
+d1 < d2: 0
+d1 <= d2: 0
+d1 > d2: 1
+d1 >= d2: 1
+
+
+Enter main menu choice no.: (integer)9
+Taking input of d1:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 16-6-1964
+Taking input of d2:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 14-12-2002
+d1 == d2: 0
+d1 != d2: 1
+d1 < d2: 1
+d1 <= d2: 1
+d1 > d2: 0
+d1 >= d2: 0
+
+
+Enter main menu choice no.: (integer)9
+Taking input of d1:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 8-8-1963
+Taking input of d2:
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 8-8-1963
+d1 == d2: 1
+d1 != d2: 0
+d1 < d2: 0
+d1 <= d2: 1
+d1 > d2: 0
+d1 >= d2: 1
+
+
+Enter main menu choice no.: (integer)10
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 29-2-2016
+WeekNumber cast result: 9
+Month cast result: 2
+WeekDay cast result: 1
+
+Enter main menu choice no.: (integer)10
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 23-3-2033
+WeekNumber cast result: 12
+Month cast result: 3
+WeekDay cast result: 3
+
+Enter main menu choice no.: (integer)10
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 19-7-1981
+WeekNumber cast result: 29
+Month cast result: 7
+WeekDay cast result: 7
+
+Enter main menu choice no.: (integer)10
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 1-1-1950
+WeekNumber cast result: 52
+Month cast result: 1
+WeekDay cast result: 7
+
+Enter main menu choice no.: (integer)10
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 3-1-2025
+WeekNumber cast result: 1
+Month cast result: 1
+WeekDay cast result: 5
+
+Enter main menu choice no.: (integer)10
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 31-12-2049
+WeekNumber cast result: 52
+Month cast result: 12
+WeekDay cast result: 5
+
+Enter main menu choice no.: (integer)11
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 3-12-1954
+Result of leap year check: 0
+
+Enter main menu choice no.: (integer)11
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 8-7-2013
+Result of leap year check: 0
+
+Enter main menu choice no.: (integer)11
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 5-4-1970
+Result of leap year check: 0
+
+Enter main menu choice no.: (integer)11
+NOTE: Current date format: d-m-yyyy
+Enter a date (as string): 7-10-2012
+Result of leap year check: 1
+
+Enter main menu choice no.: (integer)12
+Taking input through >> operator: 
+
+Showing output through << operator: 4-5-1991
+
+Enter main menu choice no.: (integer)12
+Taking input through >> operator: 
+Rejected input: Mismatch b/w format and date string.
+Showing output through << operator: 6-3-2016
+
+Enter main menu choice no.: (integer)12
+Taking input through >> operator: 
+Rejected input: Mismatch b/w format and date string.
+Showing output through << operator: 6-3-2016
+
+Enter main menu choice no.: (integer)13
